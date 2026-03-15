@@ -1,0 +1,12 @@
+defaults:
+  - model: resnet18
+  - data: cifar10
+  - _self_
+
+seed: 42
+debug_mode: false
+outputs_dir: ./outputs
+
+hydra:
+  job:
+    chdir: true
