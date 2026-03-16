@@ -20,8 +20,8 @@ The codebase features a dynamic hardware router that will automatically target `
 
 1.  **Clone and enter directory:**
     ```bash
-    git clone https://github.com/erickvs/cmpe252_final_project.git
-    cd cmpe252_final_project/final_project
+    git clone https://github.com/erickvs/CMPE252-Final-Project.git
+    cd CMPE252-Final-Project
     ```
 2.  **Create a Virtual Environment & Install:**
     ```bash
@@ -53,13 +53,12 @@ python src/main.py model=resnet18 debug_mode=true
 ```
 
 ## 📊 Results Summary
-*(To be populated after final training runs)*
 
 | Model | Test Accuracy | Training Time | Parameter Count |
 | :--- | :--- | :--- | :--- |
-| **PCA + Linear SVM** | ~XX% | ~XX mins | N/A |
-| **ResNet-18 (Scratch)** | ~XX% | ~XX mins | ~11.1M |
-| **ViT-B/16 (Fine-Tuned)**| ~XX% | ~XX mins | ~86M |
+| **PCA + Linear SVM** | 39.72% | ~0 mins | N/A |
+| **ResNet-18 (Scratch)** | 89.00% | ~25 mins | ~11.1M |
+| **ViT-B/16 (Fine-Tuned)**| 98.68% | ~62 mins | ~86M |
 
 ## 🏗 Architecture Decisions
 *   **Configuration Management:** We chose **Hydra** over standard `argparse` because comparing three wildly different architectural approaches required distinct sets of hyperparameters. Hydra ensures reproducibility by saving the exact YAML state alongside the output artifacts.
